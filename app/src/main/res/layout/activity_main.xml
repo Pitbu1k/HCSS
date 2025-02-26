@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <include layout="@layout/fragment_second"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/mainBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginVertical="15dp"
+        app:cardCornerRadius="50dp"
+        android:translationZ="30dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingHorizontal="25dp"
+            android:paddingVertical="10dp"
+            android:gravity="center"
+            tools:ignore="MissingConstraints"
+            android:background="@color/white"
+            android:layout_weight="3">
+
+            <ImageView
+                android:id="@+id/homeBtn"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:alpha="0.6"
+                android:src="@drawable/app_device_mobile_application"/>
+
+            <ImageView
+                android:id="@+id/billBtn"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:alpha="0.6"
+                android:src="@drawable/app_file_interface"/>
+
+            <ImageView
+                android:id="@+id/aboutHomeBtn"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:alpha="0.6"
+                android:src="@drawable/house"/>
+
+            <ImageView
+                android:id="@+id/profileBtn"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:alpha="0.6"
+                android:src="@drawable/app_human_interface"/>
+
+            <ImageView
+                android:id="@+id/logoutBtn"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:alpha="0.6"
+                android:src="@drawable/log_out"/>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

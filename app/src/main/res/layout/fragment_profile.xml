@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteblue"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ProfileFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_centerVertical="true"
+        app:cardCornerRadius="20dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="30dp"
+            android:paddingBottom="10dp"
+            android:paddingHorizontal="30dp"
+            android:layout_weight="3">
+
+            <EditText
+                android:id="@+id/surnameProfile"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:hint="Your Surname"
+                android:minHeight="48dp"
+                android:layout_weight="2"
+                android:layout_marginVertical="5dp"/>
+
+            <EditText
+                android:id="@+id/nameProfile"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:hint="Your Name"
+                android:minHeight="48dp"
+                android:layout_weight="2"
+                android:layout_marginVertical="5dp"/>
+
+            <EditText
+                android:id="@+id/patronymicProfile"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:hint="Your Patronymic"
+                android:minHeight="48dp"
+                android:layout_weight="2"
+                android:layout_marginVertical="5dp"/>
+
+            <EditText
+                android:id="@+id/birthdayProfile"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:hint="Your Date Of birth"
+                android:minHeight="48dp"
+                android:layout_weight="2"
+                android:layout_marginVertical="5dp"/>
+
+            <EditText
+                android:id="@+id/addressProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Your Address"
+                android:maxHeight="9dp"
+                android:layout_weight="2"
+                android:layout_marginVertical="5dp"/>
+
+            <EditText
+                android:id="@+id/emailProfile"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:hint="Your Email"
+                android:minHeight="48dp"
+                android:layout_weight="2"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:text="Cменить пароль"
+                android:alpha="0.7"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/saveBtn"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginVertical="20dp"
+                android:text="Сохранить"
+                android:textSize="20dp"
+                android:layout_weight="1"
+                app:cornerRadius="32dp"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
